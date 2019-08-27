@@ -5,18 +5,22 @@
 {{ with .Content }}
   <h1>{{ $.Page.Title }}</h1>
   {{ . }}
-
-  <ul>
+  <div id="panels">
   {{ range (where $.Pages "Section" "paginas") $.Pages.ByWeight  }}
-      <li style="background-color:{{ .Params.Color}}">{{.Title}}  {{ .Params.Icon}}
-          {{.Content}}
-      </li>
+    <div class="home-panel" style="background-color:{{ .Params.Color}};  background-image:url('{{ .Params.Image}}');">
+      <H3>{{ .Params.Icon}} {{.Title}}</H3>
+      <div class="home-lead">{{.Content}}</div>
+    </div>
+
   {{end}}
-  </ul>
+  </div>
 {{ else }}
   <h1>{{ .Site.Title }}</h1>
   <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
 {{ end }}
 </div>
 
+
+
 {{ end }}
+

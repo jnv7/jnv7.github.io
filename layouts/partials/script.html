@@ -1,0 +1,49 @@
+<script src="{{ "js/feather.min.js" | absURL }}"></script>
+<script>
+  feather.replace()
+</script>
+
+{{ if eq .Site.Params.includeBootstrapJs true }}
+<script src="{{ "js/jquery-3.3.1.slim.min.js" | absURL }}"></script>
+<script src="{{ "js/bootstrap.bundle.min.js" | absURL }}"></script>
+{{ end }}
+
+
+<script language="javascript">
+  var a = $(".accordion");
+  a.addClass("active");
+    $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
+        var minheight = 100;
+        var maxheight = 600;
+        var windowHeight = $(window).height();
+        console.log(windowHeight);
+        if(windowHeight>=(minheight+maxheight)){
+        
+          var activeLevel = Math.floor((scrollTop+minheight/2)/minheight);
+          console.log("activeLevel: " + activeLevel);
+          $(".accordion").each(function(index){
+            
+            if(index==activeLevel){
+              $(this).addClass("active");
+              console.log("added class to " + index);
+              console.log($(this));
+            }else{
+              
+              $(this).removeClass("active");
+              console.log("removed class from " + index);
+            }
+          
+          
+          });
+          
+        }else{
+          $(".accordion").each(function(index){
+              $(this).addClass("active");
+              console.log("added class to " + index);
+              console.log($(this));
+          });
+        }
+
+    })
+</script>

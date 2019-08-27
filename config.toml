@@ -50,9 +50,9 @@ timeout=3000
     weight = 5
 
 [params]
-  includeBootstrapJs = false
+  includeBootstrapJs = true
   showActiveNav = true
-  containerMaxWidth = "700px"
+  containerMaxWidth = "1000px"
   dateFormat = "2 Jan 2006"
   homeText = "Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream."
   footerText = "Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
