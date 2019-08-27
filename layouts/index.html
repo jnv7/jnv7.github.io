@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+
+<div>
+{{ with .Content }}
+  <h1>{{ $.Page.Title }}</h1>
+  {{ . }}
+
+  <ul>
+  {{ range (where $.Pages "Section" "paginas") $.Pages.ByWeight  }}
+      <li style="background-color:{{ .Params.Color}}">{{.Title}}  {{ .Params.Icon}}
+          {{.Content}}
+      </li>
+  {{end}}
+  </ul>
+{{ else }}
+  <h1>{{ .Site.Title }}</h1>
+  <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
+{{ end }}
+</div>
+
+{{ end }}
