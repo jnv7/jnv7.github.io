@@ -8,10 +8,12 @@
   <div id="panels">
   {{ range (where $.Pages "Section" "paginas") $.Pages.ByWeight  }}
     <div class="home-panel" style="background-color:{{ .Params.Color}};  background-image:url('{{ .Params.Image}}');">
-      <H3>{{ .Params.Icon}} {{.Title}}</H3>
-      <div class="home-lead">{{.Content}}</div>
+      <div class="home-panel-content">
+        <a href="#" id=""></a>
+        <H3>{{ .Params.Icon}} {{.Title}}</H3>
+        <div class="home-lead">{{.Content}}</div>
+      </div>
     </div>
-
   {{end}}
   </div>
 {{ else }}
