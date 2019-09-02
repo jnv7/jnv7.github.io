@@ -11,9 +11,14 @@
       <div class="home-panel-content">
         <a href="#" id=""></a>
         <H3>{{ .Params.Icon}} {{.Title}}</H3>
-        <div class="home-lead">{{.Content}}</div>
+        {{ with .Params.Partial }}
+          {{ partial "ultimosPosts.html" (dict "color" "blue" )}}
+        {{ else }}
+          <div class="home-lead">{{.Content}}</div>
+        {{ end }}
       </div>
     </div>
+
   {{end}}
   </div>
 {{ else }}
