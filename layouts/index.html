@@ -6,7 +6,7 @@
   <h1>{{ $.Page.Title }}</h1>
   {{ . }}
   <div id="panels">
-  {{ range (where $.Pages "Section" "paginas") $.Pages.ByWeight  }}
+  {{ range (where $.Site.Pages "Section" "paginas") $.Site.Pages.ByWeight  }}
     <div class="home-panel" style="background-color:{{ .Params.Color}};  background-image:url('{{ .Params.Image}}');">
       <div class="home-panel-content">
         <a href="#" id=""></a>
