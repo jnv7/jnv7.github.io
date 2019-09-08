@@ -3,15 +3,17 @@
 
 <div>
 {{ with .Content }}
-  <h1>{{ $.Page.Title }}</h1>
-  {{ . }}
+<!--  <h1>{{ $.Page.Title }}</h1>
+  {{ . }}-->
   <div id="panels">
   {{ range (where $.Site.Pages "Section" "paginas") $.Site.Pages.ByWeight  }}
     <div class="home-panel" style="background-color:{{ .Params.Color}};  background-image:url('{{ .Params.Image}}');">
       <div class="home-panel-content">
         <a href="#" id=""></a>
         <H3>{{ .Params.Icon}} {{.Title}}</H3>
-        <div class="home-lead">{{.Content}}</div>
+        <div class="home-body block">
+        	<div class="home-lead">{{.Content}}</div>
+		</div>
       </div>
     </div>
   {{end}}

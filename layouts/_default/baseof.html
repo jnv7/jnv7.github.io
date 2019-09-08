@@ -3,8 +3,10 @@
 <html lang="{{ $lang }}" class="h-100">
   {{ partial "head.html" . }}
   <body class="d-flex flex-column h-100">
-    {{ partial "nav.html" . }}
+    <!-- {{ partial "nav.html" . }}-->
+    
     <div class="container">
+	    <H1>{{ .Site.Title }}</H1>
       <main id="main">
         {{ block "main" . }}{{ end }}
       </main>
