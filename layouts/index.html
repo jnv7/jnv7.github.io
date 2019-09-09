@@ -13,11 +13,10 @@
         <H3>{{ .Params.Icon}} {{.Title}}</H3>
         <div class="home-body block">
             <div class="home-lead">
-        {{ with .Params.Partial }}
-          {{ partial "ultimosPosts.html" (dict "color" "blue" )}}
-        {{ else }}
             {{.Content}}
-        {{ end }}
+            {{ with .Params.Partial }}
+              {{ partial "ultimosPosts.html" (dict "color" "blue" )}}
+            {{ end }}
       </div>
       </div>
 
