@@ -1,11 +1,10 @@
 ---
 title: "Contactos"
-weight: "100"
-icon: "bla"
+weight: "9"
+icon: ""
 color: "cyan"
 date: 2019-08-23T16:24:21+01:00
-image: "https://picsum.photos/id/85/2048/1536"
-fullwidth: "1"
+image: "/images/paginas/contactos-1.jpg"
 ---
 Contacta-me:
 

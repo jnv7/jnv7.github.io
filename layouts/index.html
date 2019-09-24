@@ -1,33 +1,33 @@
 {{ define "main" }}
 
-
 <div class="container">
 {{ with .Content }}
 <!--  <h1>{{ $.Page.Title }}</h1>
   {{ . }}-->
   <div id="panels" class="row">
   {{ range (where $.Site.Pages "Section" "paginas") $.Site.Pages.ByWeight  }}
-  
-  	{{ $scratch := newScratch }}
-  	{{ $scratch.Set "mdwidth" "6" }}
-
-  	{{ if eq .Params.FullWidth "1" }}
-	  	{{ $scratch.Set "mdwidth" "12" }}
-	{{ end }}
-
-    <div class="home-panel col-12 col-md-{{ $scratch.Get `mdwidth` }}" style="background-color:{{ .Params.Color}};  background-image:url('{{ .Params.Image}}');">
-      <div class="home-panel-content">
-        <a href="#" id=""></a>
-        <H3>{{ .Params.Icon}} {{.Title}}</H3>
-        <div class="home-body block">
-            <div class="home-lead">
-            {{.Content}}
-            {{ with .Params.Partial }}
-              {{ partial "ultimosPosts.html" (dict "color" "blue" )}}
-            {{ end }}
-      </div>
-
-      </div>
+  	{{ if ne .Content "" }}
+	  	{{ $scratch := newScratch }}
+	  	{{ $scratch.Set "mdwidth" "6" }}
+	
+	  	{{ if eq .Params.FullWidth "1" }}
+		  	{{ $scratch.Set "mdwidth" "12" }}
+		{{ end }}
+	
+	    <div class="home-panel col-12 col-md-{{ $scratch.Get `mdwidth` }}" style="background-color:{{ .Params.Color}};  background-image:url('{{ .Params.Image}}');">
+	      <div class="home-panel-content">
+	        <a href="#" id=""></a>
+	        <H3>{{ .Params.Icon}} {{.Title}}</H3>
+	        <div class="home-body block">
+	            <div class="home-lead">
+	            {{.Content}}
+	            {{ with .Params.Partial }}
+	              {{ partial "ultimosPosts.html" (dict "color" "blue" )}}
+	            {{ end }}
+	      </div>
+	
+	      </div>
+	    {{end}}
     </div>
   </div>
 
