@@ -1,7 +1,7 @@
 <ul>
-<li>Post 1</li>
-<li>Post 2</li>
-<li>Post 3</li>
-<li>Post 4</li>
-<li>Post 5</li>
+{{ range first 6 ((where . "Section" "blog") .ByDate ) }}
+{{ if ne .Content "" }}  
+<li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
+{{end}}
+{{end}}
 </ul>
