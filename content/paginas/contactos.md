@@ -8,14 +8,14 @@ image: "/images/paginas/contactos-1.jpg"
 links:
     - link:
         desc: "Linkedin"
-        url:  "http://flickr.com/jnvasconcelos"
+        url:  "https://www.linkedin.com/in/jnvasconcelos/"
         image: "images/icones/linkedin.png"
     - link:
         desc: "Twitter"
         url:  "https://twitter.com/jnvasconcelos"
         image: "images/icones/twitter.png"        
     - link:
-        desc: "Mail"
+        desc: "Outros"
         url:  "https://www.linkedin.com/in/jnvasconcelos/detail/contact-info/"
         image: "images/icones/mail.png"        
 ---

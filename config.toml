@@ -1,9 +1,11 @@
 baseURL = "http://www.jnvasconcelos.com/"
 languageCode = "pt-PT"
-title = "Zé Nuno Vasconcelos"
+title = "ZÉ"
+
+
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
-theme = "jnv-bootstrap-hugo-theme"
+theme = "vanilla-bootstrap-hugo-theme"
 googleAnalytics = "UA-1234-6"
 timeout=3000
 
@@ -54,6 +56,6 @@ timeout=3000
   showActiveNav = true
   containerMaxWidth = "1000px"
   dateFormat = "2 Jan 2006"
-  homeText = "Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream."
+  homeText = "Sítio web de Zé Nuno Vasconcelos"
   footerText = "Made by JNV with [Hugo](https://gohugo.io/) based on [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
   hideFooter = false

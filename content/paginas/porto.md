@@ -7,7 +7,7 @@ date: 2019-08-23T16:24:21+01:00
 image: "/images/paginas/porto-2.jpg"
 links:
     - link:
-        desc: "Flickr"
+        desc: "flickr"
         url:  "https://www.flickr.com/photos/jnvasconcelos/albums/72157633426938002"
         image: "images/icones/flickr.png"
 ---
