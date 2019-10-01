@@ -2,9 +2,9 @@
 title: "Profissional"
 weight: "6"
 icon: ""
-color: "orange"
+color: "gray"
 date: 2019-08-23T16:24:21+01:00
-image: "/images/paginas/profissional-1.jpg"
+image: "images/paginas/profissional-1.jpg"
 fullwidth: "1"
 links:
     - link:

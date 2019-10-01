@@ -2,9 +2,9 @@
 title: "Fotos"
 weight: "7"
 icon: ""
-color: "cyan"
+color: "gray"
 date: 2019-08-23T16:24:21+01:00
-image: "/images/paginas/fotos-1.jpg"
+image: "images/paginas/fotos-1.jpg"
 links:
     - link:
         desc: "flickr"
