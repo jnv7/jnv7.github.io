@@ -3,7 +3,7 @@ languageCode = "pt-PT"
 title = "Zé Nuno Vasconcelos"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
-theme = "vanilla-bootstrap-hugo-theme"
+theme = "jnv-bootstrap-hugo-theme"
 googleAnalytics = "UA-1234-6"
 timeout=3000
 
@@ -55,5 +55,5 @@ timeout=3000
   containerMaxWidth = "1000px"
   dateFormat = "2 Jan 2006"
   homeText = "Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream."
-  footerText = "Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
+  footerText = "Made by JNV with [Hugo](https://gohugo.io/) based on [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
   hideFooter = false

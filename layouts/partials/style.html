@@ -101,20 +101,40 @@ audio {
   .home-lead{
     text-align: justify;
     display: table-cell;
-    vertical-align: middle;
+    /*vertical-align: middle;
+    min-height: 140px;*/
+    vertical-align: top;
+    height: 140px;
 
   }
+
+
+  .home-footer{
+    position: absolute;
+    height:80px;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media(max-width:768px){
+    .home-footer{
+      position: relative;
+    }
+  }	
+
+
   .home-icon{
 	  margin-top:10px;
 	  text-align: center;
-  }
-  .home-button-container{
   }
 	.img-circle {
 		border-radius: 50%;
 		border: 3px solid #99999999;
 		border-bottom-color: #66666699;
 		border-right-color: #66666699;
+    margin-right: 10px;
+    margin-left: 10px;
 	}
     #panels{
     	color:white;

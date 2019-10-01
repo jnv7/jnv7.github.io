@@ -1,1 +1,5 @@
-<div class="home-button-container"><img class="home-icon img-circle" src="images/icones/linkedin.png" width="60px"></div>
+<div class="home-button-container">
+{{ range first 6 . }}
+<a href="{{.link.url}}" target="_blank"><img alt="{{.link.desc}}" class="home-icon img-circle" src="{{.link.image}}" width="60px"/></a>
+{{end}}
+</div>

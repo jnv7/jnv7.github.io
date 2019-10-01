@@ -27,9 +27,10 @@
 								{{ end }}
 
 							</div>
-							{{ with .Params.Button }}
-							<div style=" position: absolute;height:80px;bottom: 10px;text-align: center;width: 100%;">
-								{{ partial "homeLinks.html" . }}
+
+							{{ with .Params.Links }}
+							<div class="home-footer">
+								{{ partial "homeLinks.html" .  }}								
 							</div>
 							{{ end }}
 						</div>
