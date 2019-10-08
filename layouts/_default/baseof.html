@@ -6,8 +6,10 @@
     <!-- {{ partial "nav.html" . }}-->
     
     <div class="container">
-	    <H1>{{ .Site.Title }}</H1>
-	    <H6>{{ .Site.Params.Hometext }}</H6>
+      <div class="header">
+        <H1>{{ .Site.Title }}</H1>
+        <H6>{{ .Site.Params.Hometext }}</H6>
+      </div>
       <main id="main">
         {{ block "main" . }}{{ end }}
       </main>

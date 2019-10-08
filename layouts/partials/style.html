@@ -86,8 +86,8 @@ audio {
     
   }
   .home-panel-content{
-    background-color: #10000066;
-    padding: 20px 50px 20px 50px;     
+    background-color: rgba(16,0,0,0.40);
+    padding: 15px 30px 15px 30px;
     text-align: left;
     font-size: 100%;
   }
@@ -130,9 +130,12 @@ audio {
   }
 	.img-circle {
 		border-radius: 50%;
-		border: 3px solid #99999999;
-		border-bottom-color: #66666699;
-		border-right-color: #66666699;
+		
+    border: 3px solid;
+    border-color: rgba(153,153,153,0.60);
+    border-bottom-color: rgba(102,102,102,0.60);
+    border-right-color: rgba(102,102,102,0.60);
+		
     margin-right: 10px;
     margin-left: 10px;
 	}
@@ -144,5 +147,20 @@ audio {
     color:white;
   }
     
+  .header{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media(max-width:512px){
+    .home-panel-content{
+      padding: 10px 25px 10px 25px;     
+      font-size: 90%;
+    }
+    .container{
+      padding-left: 1px;
+      padding-right: 1px;     
+    }
+  }	
+
   
 </style>
