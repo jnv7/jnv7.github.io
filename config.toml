@@ -1,4 +1,4 @@
-baseURL = "https://www.jnvasconcelos.com/jnv_hugo/"
+baseURL = "https://www.jnvasconcelos.com/site/"
 languageCode = "pt-PT"
 title = "ZÉ"
 
@@ -6,7 +6,7 @@ title = "ZÉ"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 theme = "vanilla-bootstrap-hugo-theme"
-googleAnalytics = "UA-1234-6"
+googleAnalytics = "UA-20612218-2"
 timeout=3000
 
 
