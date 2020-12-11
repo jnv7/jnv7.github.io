@@ -1,7 +1,8 @@
 <ul>
-{{ range first 6 ((where . "Section" "blog") .ByDate ) }}
-{{ if ne .Content "" }}  
-<li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
-{{end}}
-{{end}}
+		{{ range first 4 ((where . "Section" "blog") .ByDate ) }}
+			{{ if ne .Content "" }}  
+	<li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
+			{{end}}
+		{{end}}
 </ul>
+<a href="/blog">Ver todos</a>

@@ -1,0 +1,18 @@
+<div class="grid-item block-tag">
+
+{{ $type := .Type }}
+{{ range $key, $value := .Data.Terms.ByCount }}
+  {{ $name := .Name }}
+  {{ $count := .Count }}
+  {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+	<a class="btn btn-sm btn-outline-dark tag-btn" href="{{ .Permalink }}">
+      {{ if gt $count 1 }}
+      <span class="badge badge-dark">{{ $count }}</span> 
+      {{ end }}
+      {{ $name }}
+    </a>
+  
+  {{ end }}
+{{ end }}
+
+</div>

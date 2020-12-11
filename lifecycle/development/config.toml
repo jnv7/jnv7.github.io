@@ -1,0 +1,61 @@
+baseURL = "https://www.jnvasconcelos.com/"
+languageCode = "pt-PT"
+title = "ZÉ"
+
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+theme = "vanilla-bootstrap-hugo-theme"
+googleAnalytics = "UA-20612218-2"
+timeout=3000
+
+
+# Uncomment below to enable syntax highlighting
+# pygmentsCodefences = true
+# pygmentsCodefencesGuessSyntax = true
+# See https://xyproto.github.io/splash/docs/all.html for more styles
+# pygmentsStyle = "pygments"
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
+
+# See https://feathericons.com/
+# The value of pre is the icon name
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Testes"
+    pre = "edit"
+    url = "/testes/"
+    weight = 2
+  [[menu.nav]]
+    name = "Tags"
+    pre = "tag"
+    url = "/tags/"
+    weight = 3
+  [[menu.nav]]
+    name = "About"
+    pre = "smile"
+    url = "/about/"
+    weight = 4
+  [[menu.nav]]
+    name = "RSS"
+    pre = "rss"
+    url = "/index.xml"
+    weight = 5
+
+[params]
+  includeBootstrapJs = true
+  showActiveNav = true
+  containerMaxWidth = "1000px"
+  dateFormat = "2 Jan 2006"
+  homeText = "Sítio web de Zé Nuno Vasconcelos"
+  footerText = "Made by JNV with [Hugo](https://gohugo.io/) based on [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
+  hideFooter = false

@@ -1,12 +1,12 @@
-baseURL = "http://www.jnvasconcelos.com/"
+baseURL = "https://www.jnvasconcelos.com/"
 languageCode = "pt-PT"
-title = "ZÉ"
+title = "ZÉ @ www"
 
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+#disableKinds = ["taxonomy", "taxonomyTerm"]
 
 theme = "vanilla-bootstrap-hugo-theme"
-googleAnalytics = "UA-1234-6"
+googleAnalytics = "UA-20612218-2"
 timeout=3000
 
 
@@ -17,7 +17,8 @@ timeout=3000
 # pygmentsStyle = "pygments"
 
 [taxonomies]
-  tag = "tags"
+  blogTag = "tags"
+
 
 [permalinks]
   post = "/:filename/"
@@ -59,3 +60,5 @@ timeout=3000
   homeText = "Sítio web de Zé Nuno Vasconcelos"
   footerText = "Made by JNV with [Hugo](https://gohugo.io/) based on [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
   hideFooter = false
+  
+ 

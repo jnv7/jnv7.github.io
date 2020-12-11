@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="container">
+	<div id="panels" class="row">
+
+		{{ with .Site.GetPage "/paginas/blog" }}
+			{{ partial "tituloArea.html" . }}
+		{{ end }}
+
+	</div>
+	<div class="grid-item blog-item blog-item-full">
+		<h2>{{ .Title }}</h2>
+		{{ if isset .Params "image" }}
+		<div style="background-image: url({{ .Params.Image }});" class="block-image blog-image-full">
+		</div>
+  	 	{{end}}
+  	 	<br>
+ 		{{ partial "date-and-tags.html" . }}
+
+	 	<div class="blog-lead">{{ .Params.Lead }}</div>
+	 	<br>
+	 	<div>
+	 		{{ .Content }}
+		</div>
+	</div>
+	<a href="/blog">Voltar ao Blog</a>
+</div>
+{{ end }}

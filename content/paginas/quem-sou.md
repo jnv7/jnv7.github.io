@@ -2,7 +2,7 @@
 title: "Quem sou"
 weight: "1"
 icon: ""
-color: "#213123"
+color: "gray"
 date: 2019-08-23T16:24:21+01:00
 image: "/images/paginas/quem-sou-1.jpg"
 fullwidth: "1"

@@ -1,0 +1,11 @@
+{{ $scratch := newScratch }}
+{{ $scratch.Set "mdwidth" "6" }}
+
+{{ if eq .Params.FullWidth "1" }}
+	{{ $scratch.Set "mdwidth" "12" }}
+{{ end }}
+<div class="col-12 col-md-{{ $scratch.Get `mdwidth` }}">
+	<div class="grid-item block-image home-panel" style="background-color:{{ .Params.Color}}; background-image:url('{{ .Params.Image }}');">
+		<div class="home-panel-content"><h2><a href="{{ .Params.Link }}">{{ .Title }}</a></h2></div>
+	</div>
+</div>

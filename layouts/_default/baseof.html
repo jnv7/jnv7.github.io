@@ -1,19 +1,26 @@
 <!doctype html>
 {{ $lang := .Site.Language.Lang | default "en" }}
 <html lang="{{ $lang }}" class="h-100">
-  {{ partial "head.html" . }}
+	<head>
+	{{ partial "head.html" . }}
+    {{ partial "style.html" . }}
+    {{ block "styleextra" . }}{{ end }}
+	</head>
   <body class="d-flex flex-column h-100">
     <!-- {{ partial "nav.html" . }}-->
     
     <div class="container">
-	    <H1>{{ .Site.Title }}</H1>
-	    <H6>{{ .Site.Params.Hometext }}</H6>
+      <div class="header">
+        <H1><a href="/">{{ .Site.Title }}</a></H1>
+        <H6>{{ .Site.Params.Hometext }}</H6>
+      </div>
       <main id="main">
         {{ block "main" . }}{{ end }}
       </main>
     </div>
     {{ partial "footer.html" . }}
     {{ partial "script.html" . }}
+    {{ block "scriptextra" . }}{{ end }}
     {{ partial "google-analytics-async.html" . }}
   </body>
 </html>
