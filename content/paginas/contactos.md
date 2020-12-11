@@ -4,7 +4,7 @@ weight: "9"
 icon: ""
 color: "gray"
 date: 2019-08-23T16:24:21+01:00
-image: "images/paginas/contactos-1.jpg"
+image: "/images/paginas/contactos-1.jpg"
 links:
     - link:
         desc: "Linkedin"
