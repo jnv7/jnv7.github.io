@@ -4,7 +4,7 @@ weight: "3"
 icon: ""
 color: "gray"
 date: 2019-08-23T16:24:21+01:00
-image: "/images/paginas/porto-2.jpg"
+image: "images/paginas/porto-2.jpg"
 links:
     - link:
         desc: "flickr"
