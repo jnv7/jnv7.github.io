@@ -65,8 +65,6 @@ audio {
 H1 a, H1 a:hover{
 color:black;
 }
-</style>
-<style>
 @media(max-width:768px){
     H1{font-size: 5vw;}
 }
