@@ -12,7 +12,7 @@
   					{{ end }}
 		
   		<div class="col-12 col-md-{{ $scratch.Get `mdwidth` }}">
-			<div class="home-panel block-image" style="background-color:{{ .Params.Color }}; background-image:url('{{ .Params.Image }}');">
+			<div class="home-panel block-image" style="background-color:'{{ .Params.Color }}'; background-image:url('{{ .Params.Image }}');">
 				<div class="home-panel-content">
 					<a href="#" id=""></a>
 					{{ if isset .Params "link" }}

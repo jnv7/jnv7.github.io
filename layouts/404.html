@@ -1,1 +1,44 @@
-<H1>404</H1>
+<!DOCTYPE html>
+{{ $lang := .Site.Language.Lang | default "en" }}
+<html lang="{{ $lang }}" class="h-100">
+  <head>
+    {{ partial "head.html" . }} 
+    {{ partial "style.html" . }} 
+    {{ block "styleextra" . }}{{ end }}
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!-- {{ partial "nav.html" . }}-->
+
+    <div class="container">
+      <div class="header">
+        <h1><a href="/">{{ .Site.Title }}</a></h1>
+        <h6>{{ .Site.Params.Hometext }}</h6>
+      </div>
+      <main id="main">
+        <div
+            class="container">
+        <div class="col-12">
+          <div 
+            style="background-image: url('/images/paginas/404.jpg')"
+            class="home-panel block-image">
+            <div class="home-panel-content">
+              <h1>404</h1>
+              <div class="home-body block block-404">
+                  Esta página foi beber uma cervejinha com as amigas.
+              </div>
+              <div class="home-lead">
+                <a href="/">Voltar ao site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </main>
+      </main>
+    </div>
+    {{ partial "footer.html" . }} 
+    {{ partial "script.html" . }} 
+    {{ block "scriptextra" . }}{{ end }} 
+    {{ partial "google-analytics-async.html" . }}
+  </body>
+</html>
