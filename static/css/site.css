@@ -202,3 +202,10 @@ H1 a:hover {
   font-size: x-large;
   padding: 80px;
 }
+.dropdown-menu {
+  max-width: 85px ;
+  min-width: 85px ;
+}
+.bandeira-sm{
+  height: 20px;
+}

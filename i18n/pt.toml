@@ -1,0 +1,34 @@
+[vertodos]
+other = "Ver todos"
+
+
+#tags
+[desporto]
+other = "desporto"
+
+[corrida]
+other = "corrida"
+
+[gestao]
+other = "gestão"
+
+[comunicacao]
+other = "comunicação"
+
+[email]
+other = "e-mail"
+
+[estrategia]
+other = "estratégia"
+
+[familia]
+other = "família"
+
+[gtd]
+other = "gtd"
+
+[motivacao]
+other = "motivação"
+
+[tempo]
+other = "tempo"

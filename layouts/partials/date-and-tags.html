@@ -1,11 +1,16 @@
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+{{ $lang := .Lang}}
 <!-- <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>-->
 {{ $dateTime }}
+
 {{ with .Params.tags }}
   {{ range . }}
-  {{ $href := print (absURL "tags/") (urlize .) }}
-  <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
+  
+  
+    <a class="btn btn-sm btn-outline-dark tag-btn" onclick="openTagList('{{.}}', '{{$lang}}')" href="#">{{ i18n .}}</a>
+  
+  
   {{ end }}
 
 

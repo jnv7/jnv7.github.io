@@ -1,8 +1,31 @@
 <ul>
+		
+	{{ $site := . }}
+
+	{{ $pages := .RegularPages }}
+	{{ range .Home.Translations }}
+	{{ $pages = $pages | lang.Merge (where .Site.RegularPages "Section" "blog") }}
+	{{ end }}
+
+	{{with $pages  }}
 		{{ range first 4 ((where . "Section" "blog") .ByDate ) }}
-			{{ if ne .Content "" }}  
-	<li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
+
+			{{ $page := . }}
+			{{ if ne $page.Content "" }}  
+	<li><a href="{{$page.RelPermalink}}">{{$page.Title}}</a>
+	{{if ne $site.Language.Lang $page.Language.Lang }} 
+	<img class="bandeira-sm" src="/images/lang/{{.Lang}}_rnd.png">
+	{{end}}
+	</li>
 			{{end}}
 		{{end}}
+	{{ end }}
 </ul>
-<a href="/blog">Ver todos</a>
+
+{{ with .Site.GetPage "/paginas/blog" }}
+
+<a href="{{.Params.Link}}">{{ i18n "vertodos" }}</a>
+
+{{ end }}
+
+

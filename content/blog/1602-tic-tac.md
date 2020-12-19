@@ -2,7 +2,7 @@
 title: "Tic-tac"
 date: 2016-02-04T16:24:21+01:00
 lead: Uma abordagem ao Get Things Done
-tags: ["tempo", "gestão", "GTD"]
+tags: ["tempo", "gestao", "gtd"]
 ---
 Não espera por ninguém, voa e nunca é suficiente. O Tempo é um bem tão escasso que temos a obrigação de fazer o máximo para não o desperdiçar. É a única forma de conseguirmos concluir uma parte minimamente razoável de tudo o que temos para fazer.
 

@@ -3,7 +3,7 @@ title: "Strategos"
 date: 2016-05-03T16:24:21+01:00
 lead: As linhas base que têm que estar na mente de todos a todo o tempo para que se atinjam os objetivos definidos.
 image: "/blog/images/1605-eco.jpg"
-tags: ["estratégia", "família"]
+tags: ["estrategia", "familia"]
 ---
 Este é o último artigo que escrevo (ainda por cima numa lógica "toca-e-foge"...) antes daquele que é provavelmente o momento mais importante da minha vida até agora – o nascimento das minhas filhas. Muitos de vós passaram já por isto e sabem que é daqueles “game-changing-moments”. Por princípio e educação, nunca me considerei mais do que os outros. Mas, a verdade é que também nunca tinha sentido que havia alguém que fosse mais importante que eu próprio. Até agora. E logo em dose dupla. Dei por mim a pensar que este tipo de eventos é o que faz alguém mudar a estratégia. E estão partilho os meus pensamentos. Espero que seja para vós um pouco melhor que para os cadetes no filme "Tropa de Elite" quando o Capitão Nascimento falava de estratégia.
 

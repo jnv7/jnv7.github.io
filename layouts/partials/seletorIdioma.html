@@ -1,0 +1,34 @@
+<div class="btn-group">
+    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img class="bandeira-sm" src="/images/lang/{{$.Site.Language.Lang}}_rnd.png">
+    </button>
+    
+
+    {{ $page := .Page}}
+
+    <div class="dropdown-menu dropdown-menu-right" id="langselect">
+    {{ $scratch := newScratch }}
+    {{ range $.Site.Languages }}
+        {{ $language := .}} 
+        
+    
+        {{ $scratch.Set "link" "" }}
+
+        {{ range $page.AllTranslations }}
+            {{ if eq $language.Lang .Lang }}
+                {{ $scratch.Set "link" .Permalink }}
+            {{ end }}
+        {{ end }}
+        {{ $link := $scratch.Get "link"}}
+        {{ if ne $link "" }}
+        <a class="dropdown-item lang-sel" lang="{{.Lang}}" href="{{$link}}"><img class="bandeira-sm" src="/images/lang/{{.Lang}}_rnd.png"> {{.Lang}}</a>
+        {{ else }}
+        <a class="dropdown-item lang-sel" lang="{{.Lang}}" href="/{{.Lang}}/"><img class="bandeira-sm" src="/images/lang/{{.Lang}}_rnd.png"> {{.Lang}}</a>
+        {{ end}}
+    {{ end }}
+        
+      
+    </div>
+  </div>
+
+

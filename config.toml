@@ -1,8 +1,39 @@
 baseURL = "https://www.jnvasconcelos.com/"
 languageCode = "pt-PT"
 title = "ZÉ @ www"
+defaultcontentlanguageinsubdir= false
+defaultContentLanguage = "pt"
+[languages]
+  [languages.pt]
+    weight = 1
+    name="Português"
+    
+  [languages.en]
+    name="English"
+    weight = 5
+    homeText="Website of José Vasconcelos"
+    contentDir="content.en"
+    
 
 
+[[params.msg404]]
+  lang="pt" 
+  msg="Esta página foi beber uma cervejinha com as amigas."
+  voltar= "Voltar ao site"
+[[params.msg404]]
+  lang="en"
+  msg="This page went for a beer with its friends."
+  voltar= "Back to the site" 
+[[params.msgModalIdioma]]
+  lang="pt" 
+  msg="Esta página existe em Português. Voltamos para Portugal?"
+  sim= "Sim" 
+  nao= "Não"
+[[params.msgModalIdioma]]
+  lang="en"
+  msg="This page is translated in English. Do you want to see the translation?"
+  sim= "Yes" 
+  nao= "Nope" 
 #disableKinds = ["taxonomy", "taxonomyTerm"]
 
 theme = "vanilla-bootstrap-hugo-theme"
@@ -61,4 +92,3 @@ timeout=3000
   footerText = "Made by JNV with [Hugo](https://gohugo.io/) based on [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
   hideFooter = false
   
- 

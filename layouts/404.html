@@ -10,9 +10,15 @@
     <!-- {{ partial "nav.html" . }}-->
 
     <div class="container">
-      <div class="header">
-        <h1><a href="/">{{ .Site.Title }}</a></h1>
-        <h6>{{ .Site.Params.Hometext }}</h6>
+      <div class="header d-flex justify-content-between">
+        <div>
+          <H1><a href="/{{ .Site.Language }}/">{{ .Site.Title }}</a></H1>
+          <H6>{{ .Site.Params.Hometext }}</H6>
+        </div>
+      
+        <div class="mt-1">
+          {{ partial "seletorIdioma.html" .Page }}
+        </div>
       </div>
       <main id="main">
         <div
@@ -24,10 +30,10 @@
             <div class="home-panel-content">
               <h1>404</h1>
               <div class="home-body block block-404">
-                  Esta página foi beber uma cervejinha com as amigas.
+                  
               </div>
               <div class="home-lead">
-                <a href="/">Voltar ao site</a>
+                <a href="/" id="backLink"></a>
               </div>
             </div>
           </div>
@@ -40,5 +46,33 @@
     {{ partial "script.html" . }} 
     {{ block "scriptextra" . }}{{ end }} 
     {{ partial "google-analytics-async.html" . }}
+
+    <script>
+      var mensagens404=[
+        {{range .Site.Params.msg404}}
+          { lang: "{{.lang}}",
+            msg:  "{{.msg}}",
+            voltar: "{{.voltar}}"
+          },
+        {{end}}
+      ];
+      $( document ).ready(function() {
+        var cookieLang=getCookie("language");
+        var msg=null;
+        mensagens404.forEach(function(m){
+          if(msg==null && m.lang=="{{ .Site.Params.DefaultContentLanguage }}"){
+            msg=m;
+          }
+          if(m.lang===cookieLang){
+            msg=m;
+          }
+        });
+
+        $(".block-404").text(msg.msg);
+      
+        $("#backLink").text(msg.voltar);
+        
+    });
+    </script>
   </body>
 </html>

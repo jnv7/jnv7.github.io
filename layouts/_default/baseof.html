@@ -6,14 +6,19 @@
     {{ partial "style.html" . }}
     {{ block "styleextra" . }}{{ end }}
 	</head>
-  <body class="d-flex flex-column h-100">
-    <!-- {{ partial "nav.html" . }}-->
-    
+  <body class="d-flex flex-column h-100">    
     <div class="container">
-      <div class="header">
-        <H1><a href="/">{{ .Site.Title }}</a></H1>
-        <H6>{{ .Site.Params.Hometext }}</H6>
+      <div class="header d-flex justify-content-between">
+        <div>
+          <H1><a href="/{{ .Site.Language }}/">{{ .Site.Title }}</a></H1>
+          <H6>{{ .Site.Params.Hometext }}</H6>
+        </div>
+      
+        <div class="mt-1">
+          {{ partial "seletorIdioma.html" .Page }}
+        </div>
       </div>
+     
       <main id="main">
         {{ block "main" . }}{{ end }}
       </main>

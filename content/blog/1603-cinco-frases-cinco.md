@@ -2,7 +2,7 @@
 title: "Cinco frases, cinco"
 date: 2016-03-03T16:24:21+01:00
 lead: Um texto longo porque não tive tempo de escrever um mais curto.
-tags: ["comunicação", "e-mail"]
+tags: ["comunicacao", "email"]
 ---
 Há tempos deparei-me com uma citação que traduzida seria algo como "escrevi esta carta longa porque não tive tempo de a escrever mais curta"<sup>1</sup>. Como já há uns anos que não escrevo cartas, lembrei-me de alguns dos relambórios que fizeram sofrer os meus interlocutores de e-mails. Tantas linhas, letras, frases e parágrafos que não fui capaz de sintetizar, por incapacidade, orgulho, sensação de proteção ou mera preguiça. 
 

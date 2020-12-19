@@ -1,17 +1,32 @@
 {{ define "main" }}
 <div class="container">
 	<div id="panels" class="grid">		
-		{{ with .Site.GetPage "/paginas/blog" }}
+		{{ with .Site.GetPage "/paginas/blog" }}	
 			{{ partial "tituloArea.html" . }}
 		{{ end }}
-
-
+		
 		{{ with .Site.GetPage "/tags" }}
 			{{ partial "tagsList.html" . }}
 		{{ end }}
 
+		{{ $pages := .Pages }}
+
+
+		{{ range $.Site.Home.Translations }}
+			
+			{{ $scratch := newScratch }}
+			{{if eq  $.Page.Section "tags"}}
+				{{ $scratch.Set "merge" (where  (.Site.Taxonomies.tags.Get $.Page.Title).Pages "Section" "blog") }}
+			{{ else }}
+				{{ $scratch.Set "merge" (where .Site.RegularPages "Section" "blog") }}
+			{{end}}
+			
+			{{ $pages = $pages | lang.Merge  ($scratch.Get "merge" ) }}
+			
+		{{ end }}
 		
-		{{ range .Pages.ByPublishDate.Reverse }}
+	
+		{{ range $pages.ByPublishDate.Reverse }}
 		
 		<div class="grid-item blog-item">
 			{{ if isset .Params "image" }}
@@ -19,7 +34,11 @@
 			</div>
 			{{end}}
 			<div class="block-text">
-				<H3><a href="{{ .Permalink }}">{{ .Title }}</a></H3>
+				<H3><a href="{{ .Permalink }}">{{ .Title }}</a>
+					{{if ne $.Site.Language.Lang .Language.Lang }} 
+					<img class="bandeira-sm" src="/images/lang/{{.Language.Lang}}_rnd.png">
+				{{end}}
+				</H3>
 				<div class="block">
 			{{ partial "date-and-tags.html" . }}
 					<div class="blog-lead">

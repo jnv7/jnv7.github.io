@@ -2,7 +2,7 @@
 title: "Gestão desmistificada"
 date: 2016-01-07T16:24:21+01:00
 lead: Somos todos especialistas de gestão.
-tags: ["gestão"]
+tags: ["gestao"]
 ---
 Quando me pediram para escrever um artigo para o editorial de gestão, imediatamente fiquei tranquilo, pois é um tema que domino há imenso tempo. Só alguns minutos depois é que me assustei, quando constatei que todos os meus leitores eram também eles especialistas em gestão.
 
