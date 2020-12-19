@@ -2,17 +2,15 @@
 other = "See all"
 
 #tags
-[desporto]
-other = "sport"
+
+[comunicacao]
+other = "communication"
 
 [corrida]
 other = "running"
 
-[gestao]
-other = "management"
-
-[comunicacao]
-other = "communication"
+[desporto]
+other = "sport"
 
 [email]
 other = "e-mail"
@@ -23,6 +21,9 @@ other = "strategy"
 [familia]
 other = "family"
 
+[gestao]
+other = "management"
+
 [gtd]
 other = "gtd"
 
@@ -31,3 +32,6 @@ other = "motivation"
 
 [tempo]
 other = "time"
+
+[web]
+other ="web"
