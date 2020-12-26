@@ -1,0 +1,38 @@
+<script lang="javascript">
+
+      $('.lang-sel').click(function(elem){
+        var lang=hugolang.defaultLanguage;
+        try{
+            lang=elem.target.lang;
+        }catch{}
+        setLanguageCookie(lang);
+      });
+      function setLanguageCookie(lang){
+        document.cookie = "language="+lang+"; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
+      }
+      $( document ).ready(function() {
+        var cookieLang=getCookie("language");
+        if(!cookieLang){
+          cookieLang=hugolang.currentPageLanguage
+          if(!cookieLang){
+              cookieLang=hugolang.defaultLanguage;
+          }
+          setLanguageCookie(cookieLang);
+        }else if(cookieLang!=hugolang.currentPageLanguage){
+            if($.inArray(cookieLang, hugolang.availablePageLanguages)>=0){
+              selecionaIdioma(cookieLang);          
+            }
+        }
+      });
+      
+      function selecionaIdioma(lang){
+      var langLink;
+        Array.prototype.forEach.call($("#langselect a"), link => {
+          if(link.lang===lang){
+            langLink=link;
+          }
+        });
+        langLink.click();
+      
+      } 
+</script>

@@ -18,81 +18,16 @@
         {{ end }}
     ]
   };
-  $('.lang-sel').click(function(elem){
-    var lang="{{ .Site.Params.DefaultContentLanguage }}";
-    try{
-        lang=elem.target.lang;
-    }catch{}
-    document.cookie = "language="+lang+"; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
-});
-$( document ).ready(function() {
-    var cookieLang=getCookie("language");
-    
-    if(!cookieLang){
-        cookieLang=hugolang.defaultLanguage;
-    }
-    if(cookieLang!=hugolang.currentPageLanguage){
-        if($.inArray(cookieLang, hugolang.availablePageLanguages)>=0){
-          var msg=null;
-          mensagensModal.forEach(function(m){
-            if(msg==null && m.lang=="{{ .Site.Params.DefaultContentLanguage }}"){
-              msg=m;
-            }
-            if(m.lang===cookieLang){
-              msg=m;
-            }
-          });
-        
-          $("#botaoIdiomaAnterior").attr("lang", msg.lang);
-          $("#botaoManterIdioma").attr("lang", hugolang.currentPageLanguage);
-
-          $("#modalMudaIdioma .modal-body").text(msg.msg);
-          $("#botaoIdiomaAnterior .text").text(msg.sim);
-          $("#botaoManterIdioma .text").text(msg.nao);
-          
-          
-          
-          Array.prototype.forEach.call($("#modalMudaIdioma IMG"), elem => {
-            var imgSrc=elem.getAttribute("location");
-            elem.setAttribute("src", imgSrc.replace("$LANG$", elem.parentNode.getAttribute("lang")));
-          });
-          
-          selecionaIdioma(msg.lang);
-          
-        }
-    }
-});
-
-function selecionaIdioma(lang){
-  var langLink;
-    Array.prototype.forEach.call($("#langselect a"), link => {
-      if(link.lang===lang){
-        langLink=link;
-      }
-    });
-    langLink.click();
-  
-} 
 function openTagList(t, l){
-  if(l===hugolang.defaultLanguage){
-    l="";
-  }else{
-    l="/"+l;
-  }
-  window.location.href=l+"/tags/"+t;
-  
-  return false;
+if(l===hugolang.defaultLanguage){
+  l="";
+}else{
+  l="/"+l;
 }
-  var mensagensModal=[
-    {{range .Site.Params.msgModalIdioma}}
-      { lang: "{{.lang}}",
-        msg:  "{{.msg}}",
-        sim: "{{.sim}}",
-        nao: "{{.nao}}"
-      },
-    {{end}}
-  ];
-  
+window.location.href=l+"/tags/"+t;
+
+return false;
+} 
   
 </script>
 
