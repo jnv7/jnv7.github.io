@@ -1,5 +1,5 @@
 <!doctype html>
-{{ $lang := .Site.Language.Lang | default "en" }}
+{{ $lang := .Site.Language.Lang | default $.Sites.First.Language.Lang }}
 <html lang="{{ $lang }}" class="h-100">
 	<head>
 	{{ partial "head.html" . }}
