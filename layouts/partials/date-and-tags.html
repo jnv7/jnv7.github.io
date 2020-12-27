@@ -6,7 +6,9 @@
 
 {{ with .Params.tags }}
   {{ range . }}
-    <a class="btn btn-sm btn-outline-dark tag-btn" onclick="openTagList('{{.}}', '{{$lang}}')" href="#">{{ i18n .}}</a>
+  
+    {{ partial "blockTag.html" (dict "Name" . "Count" 1 "Lang" $lang ) }}
+    
   {{ end }}
 
 

@@ -1,17 +1,26 @@
 <div class="grid-item block-tag">
 
-{{ $type := .Type }}
-{{ range  $.Sites.First.Taxonomies.tags.ByCount }}
+{{ $type := "tags" }}
+{{ $defaultSite := .DefaultSite }}
+{{ $currentSite := .CurrentSite }}
+
+
+{{ range  $defaultSite.Taxonomies.tags.ByCount }}
   {{ $name := .Name }}
   {{ $count := .Count }}
-  {{ with $.Sites.First.GetPage (printf "/%s/%s" $type $name) }}
-	<a class="btn btn-sm btn-outline-dark tag-btn" href="{{ .Permalink }}">
-      {{ if gt $count 1 }}
-      <span class="badge badge-dark">{{ $count }}</span> 
-      {{ end }}
-      {{ i18n $name}}
-    </a>
+  
+
+  {{ $scratch := newScratch }}
+  {{ $scratch.Set "lang" $defaultSite.Language.Lang }}
+
+  {{ if  $currentSite.GetPage (printf "/%s/%s" $type $name) }}
+    {{ $scratch.Set "lang" $currentSite.Language.Lang }}
   {{ end }}
+
+  {{ with $defaultSite.GetPage (printf "/%s/%s" $type $name) }}
+    {{ partial "blockTag.html" (dict "Name" $name "Count" $count  "Lang" ( $scratch.Get "lang") ) }}
+  {{ end }}
+  
 {{end}}
 
 </div>

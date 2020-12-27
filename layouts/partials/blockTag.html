@@ -1,0 +1,8 @@
+  <a class="btn btn-sm btn-outline-dark tag-btn" 
+    onclick="openTagList('{{.Name}}', '{{.Lang}}')"
+    href="#">
+    {{ if gt .Count 1 }}
+      <span class="badge badge-dark">{{ .Count }}</span> 
+      {{ end }}
+    {{ i18n .Name }}
+    </a>

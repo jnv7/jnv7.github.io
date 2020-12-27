@@ -8,8 +8,7 @@
 	{{ end }}
 
 	{{with $pages  }}
-		{{ range first 4 ((where . "Section" "blog") .ByDate ) }}
-
+		{{ range first 4 ((where . "Section" "blog").ByDate.Reverse ) }}
 			{{ $page := . }}
 			{{ if ne $page.Content "" }}  
 	<li><a href="{{$page.RelPermalink}}">{{$page.Title}}</a>

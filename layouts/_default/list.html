@@ -1,19 +1,19 @@
 {{ define "main" }}
 <div class="container">
+
 	<div id="panels" class="grid">		
 		{{ with .Site.GetPage "/paginas/blog" }}	
 			{{ partial "tituloArea.html" . }}
 		{{ end }}
 		
-		{{ with .Site.GetPage "/tags" }}
-			{{ partial "tagsList.html" . }}
-		{{ end }}
-
+		{{ $sitedefault := $.Sites.First }}
+		{{ partial "tagsList.html" (dict "DefaultSite" $sitedefault "CurrentSite" .Site )}}
+		
 		{{ $pages := .Pages }}
 
 
 		{{ range $.Site.Home.Translations }}
-			
+		
 			{{ $scratch := newScratch }}
 			{{if eq  $.Page.Section "tags"}}
 				{{ $scratch.Set "merge" (where  (.Site.Taxonomies.tags.Get $.Page.Title).Pages "Section" "blog") }}
