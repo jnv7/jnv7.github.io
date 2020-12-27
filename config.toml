@@ -80,6 +80,6 @@ timeout=3000
   containerMaxWidth = "1000px"
   dateFormat = "2 Jan 2006"
   homeText = "Sítio web de Zé Nuno Vasconcelos"
-  footerText = "Made by JNV with [Hugo](https://gohugo.io/) based on [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
+  footerText = "V4.1.0 Made by JNV with [Hugo](https://gohugo.io/) based on [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
   hideFooter = false
   
