@@ -18,7 +18,7 @@
   {{ end }}
 
   {{ with $defaultSite.GetPage (printf "/%s/%s" $type $name) }}
-    {{ partial "blockTag.html" (dict "Name" $name "Count" $count  "Lang" ( $scratch.Get "lang") ) }}
+    {{ partial "blockTag.html" (dict "TagName" $name "Count" $count  "Lang" ( $scratch.Get "lang") ) }}
   {{ end }}
   
 {{end}}

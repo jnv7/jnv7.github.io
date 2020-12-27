@@ -1,0 +1,21 @@
+
+<div class="grid-item blog-item">
+    
+    {{ if  .Post.Params.Image  }}
+    <div style="background-image: url({{ .Post.Params.Image }});" class="block-image blog-preview-image">
+    </div>
+    {{end}}
+    <div class="block-text">
+        <H3><a href="{{ .Post.Permalink }}">{{ .Post.Title }}</a>
+            {{if ne .SiteLang .Post.Language.Lang }} 
+                <img class="bandeira-sm" src="/images/lang/{{.Post.Language.Lang}}_rnd.png">
+            {{ end }}
+        </H3>
+        <div class="block">
+    {{ partial "blockBlogPostDateTime.html" .Post }}
+            <div class="blog-lead">
+    {{ .Post.Params.Lead }}
+            </div>
+        </div>
+    </div>
+</div>

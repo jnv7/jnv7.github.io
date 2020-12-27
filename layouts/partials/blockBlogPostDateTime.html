@@ -7,7 +7,7 @@
 {{ with .Params.tags }}
   {{ range . }}
   
-    {{ partial "blockTag.html" (dict "Name" . "Count" 1 "Lang" $lang ) }}
+    {{ partial "blockTag.html" (dict "TagName" . "Count" 1 "Lang" $lang ) }}
     
   {{ end }}
 

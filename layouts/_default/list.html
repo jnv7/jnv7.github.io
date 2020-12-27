@@ -28,25 +28,9 @@
 	
 		{{ range $pages.ByPublishDate.Reverse }}
 		
-		<div class="grid-item blog-item">
-			{{ if isset .Params "image" }}
-			<div style="background-image: url({{ .Params.Image }});" class="block-image blog-preview-image">
-			</div>
-			{{end}}
-			<div class="block-text">
-				<H3><a href="{{ .Permalink }}">{{ .Title }}</a>
-					{{if ne $.Site.Language.Lang .Language.Lang }} 
-					<img class="bandeira-sm" src="/images/lang/{{.Language.Lang}}_rnd.png">
-				{{end}}
-				</H3>
-				<div class="block">
-			{{ partial "date-and-tags.html" . }}
-					<div class="blog-lead">
-			{{ .Params.Lead }}
-					</div>
-				</div>
-			</div>
-		</div>
+			{{ partial "blockBlogPostMosaic.html" (dict  "Post" . "SiteLang" $.Site.Language.Lang) }}
+
+		
 		{{ end }}
 	</div>
 </div>
