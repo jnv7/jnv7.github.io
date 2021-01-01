@@ -137,7 +137,6 @@ H1 a:hover {
   text-align: center;
   width: 100%;
 }
-
 @media (max-width: 768px) {
   .home-footer {
     position: relative;
