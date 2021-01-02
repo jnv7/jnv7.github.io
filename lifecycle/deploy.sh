@@ -1,5 +1,7 @@
 #!/bin/bash
 cd ..
+echo "Obter última versao"
+git pull
 echo "Compilar site"
 hugo
 echo "Compilação concluída"
