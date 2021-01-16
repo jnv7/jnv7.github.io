@@ -3,6 +3,11 @@ languageCode = "pt-PT"
 title = "ZÉ @ www"
 defaultcontentlanguageinsubdir= false
 defaultContentLanguage = "pt"
+
+theme = "vanilla-bootstrap-hugo-theme"
+googleAnalytics = "UA-20612218-2"
+timeout=3000
+
 [languages]
   [languages.pt]
     weight = 1
@@ -27,9 +32,6 @@ defaultContentLanguage = "pt"
 
 #disableKinds = ["taxonomy", "taxonomyTerm"]
 
-theme = "vanilla-bootstrap-hugo-theme"
-googleAnalytics = "UA-20612218-2"
-timeout=3000
 
 
 # Uncomment below to enable syntax highlighting
