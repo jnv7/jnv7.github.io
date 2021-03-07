@@ -25,6 +25,8 @@ timeout=3000
   lang="pt" 
   msg="Esta página foi beber uma cervejinha com as amigas."
   voltar= "Voltar ao site"
+
+
 [[params.msg404]]
   lang="en"
   msg="This page went for a beer with its friends."
