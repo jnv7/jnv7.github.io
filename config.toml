@@ -8,7 +8,6 @@ theme = "vanilla-bootstrap-hugo-theme"
 googleAnalytics = "UA-20612218-2"
 timeout=3000
 
-
 [languages]
   [languages.pt]
     weight = 1
