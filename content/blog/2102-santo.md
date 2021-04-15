@@ -1,6 +1,6 @@
 ---
 title: "O Santo"
-date: 2021-04-15T21:34:27Z
+date: 2021-04-14T21:30:00Z
 lead: "\"O amigo tem que ser como o dinheiro, que antes de necessitá-lo, sabe-se o valor que têm.\" (Sócrates)"
 image: "/blog/images/2102-santo.jpg"
 tags: ["politica"]
