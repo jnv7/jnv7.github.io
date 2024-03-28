@@ -5,3 +5,4 @@ themes
 **/pvt/*
 
 !**/pvt/*.example
+content/.DS_Store
