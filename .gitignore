@@ -2,6 +2,8 @@
 .vscode
 public
 themes
+pvt
+.example
 **/pvt/*
 
 !**/pvt/*.example
