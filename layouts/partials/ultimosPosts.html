@@ -21,7 +21,7 @@
 	{{ end }}
 </ul>
 
-{{ with .Site.GetPage "/paginas/blog" }}
+{{ with $.GetPage "/paginas/blog" }}
 
 <a href="{{.Params.Link}}">{{ i18n "vertodos" }}</a>
 
