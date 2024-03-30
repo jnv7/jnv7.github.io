@@ -11,14 +11,15 @@ timeout=3000
 [languages]
   [languages.pt]
     weight = 1
-    name="Português"
+    [languages.pt.params]
+      name="Português"
     
   [languages.en]
-    name="English"
     weight = 5
     homeText="Website of José Vasconcelos"
     contentDir="content.en"
-    
+    [languages.en.params]
+      name="English"
 
 
 [[params.msg404]]
