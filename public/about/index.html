@@ -1,0 +1,180 @@
+<!doctype html>
+
+<html lang="pt" class="h-100">
+	<head>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.58.1" />
+  <link rel="stylesheet" href="https://www.jnvasconcelos.com/css/bootstrap.min.css">
+  
+  
+  <title> | ZÉ @ www</title>
+
+
+    <style>
+.container {
+  max-width: 1000px;
+}
+</style>
+<link rel="stylesheet" href="https://www.jnvasconcelos.com/css/site.css">
+
+    
+	</head>
+  <body class="d-flex flex-column h-100">    
+    <div class="container">
+      <div class="header d-flex justify-content-between">
+        <div>
+          <H1><a href="/pt/">ZÉ @ www</a></H1>
+          <H6>Sítio web de Zé Nuno Vasconcelos</H6>
+        </div>
+      
+        <div class="mt-1">
+          <div class="btn-group">
+    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img class="bandeira-sm" src="/images/lang/pt_rnd.png">
+    </button>
+    
+
+    
+
+    <div class="dropdown-menu dropdown-menu-right" id="langselect">
+    
+    
+         
+        
+    
+        
+
+        
+            
+                
+            
+        
+            
+        
+        
+        
+        <a class="dropdown-item lang-sel" lang="pt" href="https://www.jnvasconcelos.com/about/"><img class="bandeira-sm" src="/images/lang/pt_rnd.png"> pt</a>
+        
+    
+         
+        
+    
+        
+
+        
+            
+        
+            
+                
+            
+        
+        
+        
+        <a class="dropdown-item lang-sel" lang="en" href="https://www.jnvasconcelos.com/en/about/"><img class="bandeira-sm" src="/images/lang/en_rnd.png"> en</a>
+        
+        
+    </div>
+  </div>
+
+
+
+        </div>
+      </div>
+     
+      <main id="main">
+        
+<div class="container">
+<h1></h1>
+
+</div>
+
+      </main>
+    </div>
+    
+<footer id="footer" class="mt-auto text-center text-muted">
+  <div class="container">
+    Made by JNV with <a href="https://gohugo.io/">Hugo</a> based on <a href="https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme">Vanilla</a>
+  </div>
+</footer>
+
+    <script src="https://www.jnvasconcelos.com/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+
+
+<script src="https://www.jnvasconcelos.com/js/jquery-3.3.1.slim.min.js"></script>
+<script src="https://www.jnvasconcelos.com/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://www.jnvasconcelos.com/js/script.js"></script>
+<script language="javascript">
+  var hugolang={
+    defaultLanguage:"pt",
+    currentPageLanguage:"pt",
+    availablePageLanguages:[
+        
+            "pt",
+        
+            "en",
+        
+    ]
+  };
+function openTagList(t, l){
+if(l===hugolang.defaultLanguage){
+  l="";
+}else{
+  l="/"+l;
+}
+window.location.href=l+"/tags/"+t;
+
+return false;
+} 
+  
+</script>
+
+
+    
+    <script lang="javascript">
+
+      $('.lang-sel').click(function(elem){
+        var lang=hugolang.defaultLanguage;
+        try{
+            lang=elem.target.lang;
+        }catch{}
+        setLanguageCookie(lang);
+      });
+      function setLanguageCookie(lang){
+        document.cookie = "language="+lang+"; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
+      }
+      $( document ).ready(function() {
+        var cookieLang=getCookie("language");
+        if(!cookieLang){
+          cookieLang=hugolang.currentPageLanguage
+          if(!cookieLang){
+              cookieLang=hugolang.defaultLanguage;
+          }
+          setLanguageCookie(cookieLang);
+        }else if(cookieLang!=hugolang.currentPageLanguage){
+            if($.inArray(cookieLang, hugolang.availablePageLanguages)>=0){
+              selecionaIdioma(cookieLang);          
+            }
+        }
+      });
+      
+      function selecionaIdioma(lang){
+      var langLink;
+        Array.prototype.forEach.call($("#langselect a"), link => {
+          if(link.lang===lang){
+            langLink=link;
+          }
+        });
+        langLink.click();
+      
+      } 
+</script>
+    
+  
+
+  </body>
+</html>

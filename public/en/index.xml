@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zé Nuno Vasconcelos on ZÉ @ www</title>
+    <link>https://www.jnvasconcelos.com/en/</link>
+    <description>Recent content in Zé Nuno Vasconcelos on ZÉ @ www</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-PT</language>
+    <lastBuildDate>Fri, 23 Aug 2019 16:24:21 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.jnvasconcelos.com/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Who am I</title>
+      <link>https://www.jnvasconcelos.com/en/paginas/quem-sou/</link>
+      <pubDate>Fri, 23 Aug 2019 16:24:21 +0100</pubDate>
+      
+      <guid>https://www.jnvasconcelos.com/en/paginas/quem-sou/</guid>
+      <description>Born and raised in Porto, co-founder of a project to raise a pair of twin girls. We do what we can. IT Engineer that became manager. Always ready to optimize the next most important irrelevance in the world. I love sports and the good things in life, like my family, good grilled fish, craft beer and a good coffee on a nice sunny day. A musician that never learn how to be it, an occasional photographer, a writer with few stories to tell.</description>
+    </item>
+    
+    <item>
+      <title>Porto</title>
+      <link>https://www.jnvasconcelos.com/en/paginas/porto/</link>
+      <pubDate>Fri, 23 Aug 2019 16:24:21 +0100</pubDate>
+      
+      <guid>https://www.jnvasconcelos.com/en/paginas/porto/</guid>
+      <description>I would be lying if I kept saying Porto is perfect. Far from it. But it is home. It is beautiful. And it is us who should respect and care for it.</description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://www.jnvasconcelos.com/en/paginas/blog/</link>
+      <pubDate>Fri, 23 Aug 2019 16:24:21 +0100</pubDate>
+      
+      <guid>https://www.jnvasconcelos.com/en/paginas/blog/</guid>
+      <description>The most recent texts I have written (content may not be available in English):</description>
+    </item>
+    
+    <item>
+      <title>Professional</title>
+      <link>https://www.jnvasconcelos.com/en/paginas/profissional/</link>
+      <pubDate>Fri, 23 Aug 2019 16:24:21 +0100</pubDate>
+      
+      <guid>https://www.jnvasconcelos.com/en/paginas/profissional/</guid>
+      <description>The major in Computer Engineering took me to the world of banking. I started on web development. I attained an MBA to be prepared to answer the challenges my career would pose me. I became interested in linking business with IT. Then I became an IT architect and started thinking on the purposes of produced software. I&amp;rsquo;m an evangelist for agile methodologies and obsessed with partial but valid software delivery.</description>
+    </item>
+    
+    <item>
+      <title>Photos</title>
+      <link>https://www.jnvasconcelos.com/en/paginas/fotos/</link>
+      <pubDate>Fri, 23 Aug 2019 16:24:21 +0100</pubDate>
+      
+      <guid>https://www.jnvasconcelos.com/en/paginas/fotos/</guid>
+      <description>Some moments stay forever. Fortunately there is a way to register. And the cloud to keep them.</description>
+    </item>
+    
+    <item>
+      <title>Contacts</title>
+      <link>https://www.jnvasconcelos.com/en/paginas/contactos/</link>
+      <pubDate>Fri, 23 Aug 2019 16:24:21 +0100</pubDate>
+      
+      <guid>https://www.jnvasconcelos.com/en/paginas/contactos/</guid>
+      <description>Contact me:</description>
+    </item>
+    
+    <item>
+      <title>New site</title>
+      <link>https://www.jnvasconcelos.com/en/blog/2001-novo-site/</link>
+      <pubDate>Sat, 19 Dec 2020 18:23:57 +0000</pubDate>
+      
+      <guid>https://www.jnvasconcelos.com/en/blog/2001-novo-site/</guid>
+      <description>I launched a new site today, more modern and compatible, based on the Hugo platform for content management and templates. The site is bilingual though not all contents are already translated to English. Any problems, contact me.</description>
+    </item>
+    
+    <item>
+      <title>A marathon in 600 characters</title>
+      <link>https://www.jnvasconcelos.com/en/blog/1701-maratona-600-palavras/</link>
+      <pubDate>Sun, 03 Dec 2017 16:24:21 +0100</pubDate>
+      
+      <guid>https://www.jnvasconcelos.com/en/blog/1701-maratona-600-palavras/</guid>
+      <description>It&amp;rsquo;s 46145 yards. I&amp;rsquo;d need 3 pages to describe it. You need to prepare yourself, don&amp;rsquo;t exaggerate, deal with a very hard training period, be lucky with injuries and show up at the start line. Then you live each and every one of those yards, wave to the family and friends (thank you all). And try to smile, because you&amp;rsquo;re doing what you like and, even though you&amp;rsquo;re not a superhero nor you&amp;rsquo;re becoming healthier, it&amp;rsquo;s a challenge, overcome, knowing you&amp;rsquo;ll get your strength from places you didn&amp;rsquo;t even knew you had when you really need it.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.jnvasconcelos.com/en/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.jnvasconcelos.com/en/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

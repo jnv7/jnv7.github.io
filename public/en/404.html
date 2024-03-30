@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en" class="h-100">
+  <head>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.58.1" />
+  <link rel="stylesheet" href="https://www.jnvasconcelos.com/css/bootstrap.min.css">
+  
+  
+  <title>404 Page not found | ZÉ @ www</title>
+
+ 
+    <style>
+.container {
+  max-width: 1000px;
+}
+</style>
+<link rel="stylesheet" href="https://www.jnvasconcelos.com/css/site.css">
+ 
+    
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+
+    <div class="container">
+      <div class="header d-flex justify-content-between">
+        <div>
+          <H1><a href="/en/">ZÉ @ www</a></H1>
+          <H6>Website of José Vasconcelos</H6>
+        </div>
+      
+        <div class="mt-1">
+          <div class="btn-group">
+    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img class="bandeira-sm" src="/images/lang/en_rnd.png">
+    </button>
+    
+
+    
+
+    <div class="dropdown-menu dropdown-menu-right" id="langselect">
+    
+    
+         
+        
+    
+        
+
+        
+        
+        
+        <a class="dropdown-item lang-sel" lang="pt" href="/pt/"><img class="bandeira-sm" src="/images/lang/pt_rnd.png"> pt</a>
+        
+    
+         
+        
+    
+        
+
+        
+        
+        
+        <a class="dropdown-item lang-sel" lang="en" href="/en/"><img class="bandeira-sm" src="/images/lang/en_rnd.png"> en</a>
+        
+        
+    </div>
+  </div>
+
+
+
+        </div>
+      </div>
+      <main id="main">
+        <div
+            class="container">
+        <div class="col-12">
+          <div 
+            style="background-image: url('/images/paginas/404.jpg')"
+            class="home-panel block-image">
+            <div class="home-panel-content">
+              <h1>404</h1>
+              <div class="home-body block block-404">
+                  
+              </div>
+              <div class="home-lead">
+                <a href="/" id="backLink"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </main>
+      </main>
+    </div>
+    
+<footer id="footer" class="mt-auto text-center text-muted">
+  <div class="container">
+    Made by JNV with <a href="https://gohugo.io/">Hugo</a> based on <a href="https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme">Vanilla</a>
+  </div>
+</footer>
+ 
+    <script src="https://www.jnvasconcelos.com/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+
+
+<script src="https://www.jnvasconcelos.com/js/jquery-3.3.1.slim.min.js"></script>
+<script src="https://www.jnvasconcelos.com/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://www.jnvasconcelos.com/js/script.js"></script>
+<script language="javascript">
+  var hugolang={
+    defaultLanguage:"pt",
+    currentPageLanguage:"en",
+    availablePageLanguages:[
+        
+    ]
+  };
+function openTagList(t, l){
+if(l===hugolang.defaultLanguage){
+  l="";
+}else{
+  l="/"+l;
+}
+window.location.href=l+"/tags/"+t;
+
+return false;
+} 
+  
+</script>
+
+ 
+     
+    
+  
+
+
+    <script>
+      var mensagens404=[
+        
+          { lang: "pt",
+            msg:  "Esta página foi beber uma cervejinha com as amigas.",
+            voltar: "Voltar ao site"
+          },
+        
+          { lang: "en",
+            msg:  "This page went for a beer with its friends.",
+            voltar: "Back to the site"
+          },
+        
+      ];
+      $( document ).ready(function() {
+        var cookieLang=getCookie("language");
+        var msg=null;
+        mensagens404.forEach(function(m){
+          if(msg==null && m.lang==""){
+            msg=m;
+          }
+          if(m.lang===cookieLang){
+            msg=m;
+          }
+        });
+
+        $(".block-404").text(msg.msg);
+      
+        $("#backLink").text(msg.voltar);
+        
+    });
+    </script>
+  </body>
+</html>
