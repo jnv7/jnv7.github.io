@@ -129,6 +129,9 @@ H1 a:hover {
 .blog-image-full {
   height: 400px;
 }
+.blog-image {
+  width: 300px;
+}
 
 .home-footer {
   position: absolute;

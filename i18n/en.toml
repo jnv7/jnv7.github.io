@@ -30,15 +30,20 @@ other = "gtd"
 [motivacao]
 other = "motivation"
 
-
 [otimismo]
 other = "optimism"
 
 [politica]
 other = "politics"
 
+[porto]
+other = "Porto"
+
 [tempo]
 other = "time"
+
+[turismo]
+other = "tourism"
 
 [web]
 other ="web"

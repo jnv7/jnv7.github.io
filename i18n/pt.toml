@@ -36,8 +36,14 @@ other = "otimismo"
 [politica]
 other = "política"
 
+[porto]
+other = "Porto"
+
 [tempo]
 other = "tempo"
+
+[turismo]
+other = "turismo"
 
 [web]
 other = "web"
