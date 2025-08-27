@@ -6,6 +6,10 @@
   {{ if .IsHome }}
     {{ $title = print .Site.Title " - " .Site.Params.Hometext }}
   {{ end }}
+  {{ if isset .Params "image" }}
+    <meta property="og:image" content="{{ .Params.Image }}" />
+  {{end}}
+
   {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
