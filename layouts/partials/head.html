@@ -6,6 +6,13 @@
   {{ if .IsHome }}
     {{ $title = print .Site.Title " - " .Site.Params.Hometext }}
   {{ end }}
+
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+  
+
+
   {{ if isset .Params "image" }}
     <meta property="og:image" content="{{ .Params.Image }}" />
   {{end}}
