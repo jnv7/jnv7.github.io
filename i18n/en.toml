@@ -27,6 +27,12 @@ other = "management"
 [gtd]
 other = "gtd"
 
+[ia]
+other = "AI"
+
+[livros]
+other = "books"
+
 [motivacao]
 other = "motivation"
 
